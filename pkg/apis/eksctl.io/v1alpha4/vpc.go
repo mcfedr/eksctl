@@ -24,6 +24,7 @@ type (
 		ExtraCIDRs []*ipnet.IPNet `json:"extraCIDRs,omitempty"`
 		// for pre-defined shared node SG
 		SharedNodeSecurityGroup string `json:"sharedNodeSecurityGroup,omitempty"`
+		NatGateway bool `json:"natGateway,omitempty"`
 	}
 	// ClusterSubnets holds private and public subnets
 	ClusterSubnets struct {

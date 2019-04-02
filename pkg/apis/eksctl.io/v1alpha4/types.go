@@ -296,6 +296,7 @@ func NewClusterVPC() *ClusterVPC {
 		Network: Network{
 			CIDR: &cidr,
 		},
+		NatGateway: true,
 	}
 }
 

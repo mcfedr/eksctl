@@ -185,7 +185,8 @@ const expected = `
 		},
 		"iam": {},
 		"vpc": {
-		  "cidr": "192.168.0.0/16"
+		  "cidr": "192.168.0.0/16",
+          "natGateway": true
 		},
 		"nodeGroups": [
 		  {

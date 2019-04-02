@@ -173,6 +173,7 @@ func testVPC() *api.ClusterVPC {
 				},
 			},
 		},
+		NatGateway: true,
 	}
 }
 

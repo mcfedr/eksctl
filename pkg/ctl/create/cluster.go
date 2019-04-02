@@ -84,6 +84,7 @@ func createClusterCmd(g *cmdutils.Grouping) *cobra.Command {
 			api.SubnetTopologyPublic:  fs.StringSlice("vpc-public-subnets", nil, "re-use public subnets of an existing VPC"),
 		}
 		fs.StringVar(&kopsClusterNameForVPC, "vpc-from-kops-cluster", "", "re-use VPC from a given kops cluster")
+		fs.BoolVar(&cfg.VPC.NatGateway, "nat-gateway", cfg.VPC.NatGateway, "enable nat gateway creation in VPC")
 	})
 
 	cmdutils.AddCommonFlagsForAWS(group, p, true)
